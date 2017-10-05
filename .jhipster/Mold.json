@@ -1,0 +1,33 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "many-to-many",
+            "relationshipValidateRules": "required",
+            "otherEntityRelationshipName": "mold",
+            "relationshipName": "model",
+            "otherEntityName": "model",
+            "otherEntityField": "name",
+            "ownerSide": true
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "number",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "size",
+            "fieldType": "SizeModel",
+            "fieldValues": "SMALL,MEDIUM,LARGE"
+        }
+    ],
+    "changelogDate": "20171005215525",
+    "entityTableName": "mold",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "no"
+}

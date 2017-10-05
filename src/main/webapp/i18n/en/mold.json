@@ -1,0 +1,23 @@
+{
+    "workshopSilverApp": {
+        "mold" : {
+            "home": {
+                "title": "Molds",
+                "createLabel": "Create a new Mold",
+                "createOrEditLabel": "Create or edit a Mold"
+            },
+            "created": "A new Mold is created with identifier {{ param }}",
+            "updated": "A Mold is updated with identifier {{ param }}",
+            "deleted": "A Mold is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Mold {{ id }}?"
+            },
+            "detail": {
+                "title": "Mold"
+            },
+            "number": "Number",
+            "size": "Size",
+            "model": "Model"
+        }
+    }
+}

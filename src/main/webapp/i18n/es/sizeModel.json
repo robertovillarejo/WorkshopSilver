@@ -1,0 +1,10 @@
+{
+    "workshopSilverApp": {
+        "SizeModel" : {
+            "null": "",
+            "SMALL": "SMALL",
+            "MEDIUM": "MEDIUM",
+            "LARGE": "LARGE"
+        }
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "photo",
+            "otherEntityName": "photo",
+            "otherEntityRelationshipName": "model"
+        },
+        {
+            "relationshipType": "many-to-many",
+            "relationshipName": "mold",
+            "otherEntityName": "mold",
+            "ownerSide": false,
+            "otherEntityRelationshipName": "model"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required",
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": 30
+        }
+    ],
+    "changelogDate": "20171005215524",
+    "entityTableName": "model",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "no"
+}

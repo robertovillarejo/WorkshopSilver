@@ -5,9 +5,9 @@
         .module('workshopSilverApp')
         .controller('PhotoDialogController', PhotoDialogController);
 
-    PhotoDialogController.$inject = ['$timeout', '$scope', '$stateParams', '$uibModalInstance', 'DataUtils', 'entity', 'Photo', 'Model'];
+    PhotoDialogController.$inject = ['$timeout', '$scope', '$stateParams', '$uibModalInstance', 'DataUtils', 'entity', 'Photo'];
 
-    function PhotoDialogController ($timeout, $scope, $stateParams, $uibModalInstance, DataUtils, entity, Photo, Model) {
+    function PhotoDialogController ($timeout, $scope, $stateParams, $uibModalInstance, DataUtils, entity, Photo) {
         var vm = this;
 
         vm.photo = entity;
@@ -15,7 +15,6 @@
         vm.byteSize = DataUtils.byteSize;
         vm.openFile = DataUtils.openFile;
         vm.save = save;
-        vm.models = Model.query();
 
         $timeout(function (){
             angular.element('.form-group:eq(1)>input').focus();

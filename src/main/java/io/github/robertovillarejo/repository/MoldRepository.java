@@ -18,5 +18,8 @@ public interface MoldRepository extends JpaRepository<Mold, Long> {
 
     @Query("select mold from Mold mold left join fetch mold.models where mold.id =:id")
     Mold findOneWithEagerRelationships(@Param("id") Long id);
+    
+    @Query(nativeQuery=true, value="SELECT id, jhi_number, jhi_size FROM mold_model INNER JOIN mold ON mold_model.molds_id = mold.id WHERE mold_model.models_id = ?")
+    List<Mold> findAllByModelId(@Param("id") Long id);
 
 }

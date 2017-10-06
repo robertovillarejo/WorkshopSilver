@@ -125,4 +125,19 @@ public class MoldResource {
         moldRepository.delete(id);
         return ResponseEntity.ok().headers(HeaderUtil.createEntityDeletionAlert(ENTITY_NAME, id.toString())).build();
     }
+    
+    /**
+     * GET  /models/{id}/molds : get all the molds.
+     *
+     * @param id the id of the model to get molds
+     * @return the ResponseEntity with status 200 (OK) and the list of molds in body
+     */
+    @GetMapping("/models/{id}/molds")
+    @Timed
+    public List<Mold> getAllMoldsByModel(@PathVariable Long id) {
+        log.debug("REST request to get all Molds of Model: {}", id);
+        return moldRepository.findAllByModelId(id);
+    }
+    
+    
 }

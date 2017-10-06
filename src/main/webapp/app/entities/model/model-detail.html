@@ -21,6 +21,14 @@
                         <span ng-if="photo.photo">{{photo.photoContentType}}, {{vm.byteSize(photo.photo)}}</span>
                     </td>
                     <td>{{photo.footer}}</td>
+                    <td>
+                        <button type="submit"
+                        ui-sref="model-photos.delete({photoId:photo.id})"
+                        class="btn btn-danger btn-sm">
+                            <span class="glyphicon glyphicon-remove-circle"></span>
+                            <span class="hidden-sm-down" data-translate="entity.action.delete"></span>
+                        </button>
+                    </td>
                 </tr>
             </tbody>
         </table>
@@ -32,8 +40,8 @@
         <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span data-translate="entity.action.back"> Back</span>
     </button>
 
-    <button type="button" ui-sref="model-detail.edit({id:vm.model.id})" class="btn btn-primary">
+    <button type="button" ui-sref="model-photos.new({id:vm.model.id})" class="btn btn-primary">
         <span class="glyphicon glyphicon-pencil"></span>
-        <span class="hidden-sm-down" data-translate="entity.action.edit"> Edit</span>
+        <span class="hidden-sm-down" data-translate="workshopSilverApp.photo.home.createLabel"> Create new Photo</span>
     </button>
 </div>

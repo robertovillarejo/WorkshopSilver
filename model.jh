@@ -1,13 +1,13 @@
 // JDL definition for application 'SilverWorkshop' generated with command 'jhipster export-jdl'
 
-entity Model (model) {
+entity Model {
   name String required maxlength(30)
 }
-entity Mold (mold) {
+entity Mold {
   number String required,
   size SizeModel
 }
-entity Photo (photo) {
+entity Photo {
   photo ImageBlob required,
   footer String maxlength(25)
 }
@@ -19,10 +19,10 @@ enum SizeModel {
 }
 
 relationship OneToMany {
-  Model{photo} to Photo{model required}
+  Model{photos} to Photo{model}
 }
 relationship ManyToMany {
-  Mold{model(name) required} to Model{mold}
+  Mold{models(name)} to Model{molds}
 }
 
 paginate Model with pagination

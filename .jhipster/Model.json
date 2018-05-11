@@ -1,0 +1,35 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "photos",
+            "otherEntityName": "photo",
+            "otherEntityRelationshipName": "model"
+        },
+        {
+            "relationshipType": "many-to-many",
+            "relationshipName": "molds",
+            "otherEntityName": "mold",
+            "ownerSide": false,
+            "otherEntityRelationshipName": "models"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required",
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": 30
+        }
+    ],
+    "changelogDate": "20180511215034",
+    "entityTableName": "model",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "no",
+    "jpaMetamodelFiltering": false
+}

@@ -38,6 +38,12 @@ public class CacheConfiguration {
             cm.createCache(io.github.robertovillarejo.silverworkshop.domain.User.class.getName(), jcacheConfiguration);
             cm.createCache(io.github.robertovillarejo.silverworkshop.domain.Authority.class.getName(), jcacheConfiguration);
             cm.createCache(io.github.robertovillarejo.silverworkshop.domain.User.class.getName() + ".authorities", jcacheConfiguration);
+            cm.createCache(io.github.robertovillarejo.silverworkshop.domain.Model.class.getName(), jcacheConfiguration);
+            cm.createCache(io.github.robertovillarejo.silverworkshop.domain.Model.class.getName() + ".photos", jcacheConfiguration);
+            cm.createCache(io.github.robertovillarejo.silverworkshop.domain.Model.class.getName() + ".molds", jcacheConfiguration);
+            cm.createCache(io.github.robertovillarejo.silverworkshop.domain.Mold.class.getName(), jcacheConfiguration);
+            cm.createCache(io.github.robertovillarejo.silverworkshop.domain.Mold.class.getName() + ".models", jcacheConfiguration);
+            cm.createCache(io.github.robertovillarejo.silverworkshop.domain.Photo.class.getName(), jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }

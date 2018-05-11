@@ -83,6 +83,39 @@
                 }]
             }
         })
+        .state('model-photos', {
+            parent: 'model',
+            url: '/model/{id}/photos',
+            data: {
+                authorities: ['ROLE_USER'],
+                pageTitle: 'workshopSilverApp.photo.home.title'
+            },
+            views: {
+                'content@': {
+                    templateUrl: 'app/entities/model/model-photos.html',
+                    controller: 'ModelDetailPhotosController',
+                    controllerAs: 'vm'
+                }
+            },
+            resolve: {
+                translatePartialLoader: ['$translate', '$translatePartialLoader', function ($translate, $translatePartialLoader) {
+                    $translatePartialLoader.addPart('model');
+                    $translatePartialLoader.addPart('photo');
+                    return $translate.refresh();
+                }],
+                entity: ['$stateParams', 'Model', function($stateParams, Model) {
+                    return Model.get({id : $stateParams.id}).$promise;
+                }],
+                previousState: ["$state", function ($state) {
+                    var currentStateData = {
+                        name: $state.current.name || 'model',
+                        params: $state.params,
+                        url: $state.href($state.current.name, $state.params)
+                    };
+                    return currentStateData;
+                }]
+            }
+        })
         .state('model-detail.edit', {
             parent: 'model-detail',
             url: '/detail/edit',

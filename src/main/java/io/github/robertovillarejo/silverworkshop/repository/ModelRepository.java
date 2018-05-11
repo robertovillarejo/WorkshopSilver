@@ -1,10 +1,9 @@
 package io.github.robertovillarejo.silverworkshop.repository;
 
-import io.github.robertovillarejo.silverworkshop.domain.Model;
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import org.springframework.data.jpa.repository.*;
-
+import io.github.robertovillarejo.silverworkshop.domain.Model;
 
 /**
  * Spring Data JPA repository for the Model entity.

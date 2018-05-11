@@ -1,4 +1,4 @@
-(function() {
+(function () {
     'use strict';
     angular
         .module('workshopSilverApp')
@@ -6,11 +6,11 @@
 
     Model.$inject = ['$resource'];
 
-    function Model ($resource) {
-        var resourceUrl =  'api/models/:id';
+    function Model($resource) {
+        var resourceUrl = 'api/models/:id';
 
         return $resource(resourceUrl, {}, {
-            'query': { method: 'GET', isArray: true},
+            'query': { method: 'GET', isArray: true },
             'get': {
                 method: 'GET',
                 transformResponse: function (data) {
@@ -20,7 +20,8 @@
                     return data;
                 }
             },
-            'update': { method:'PUT' }
+            'update': { method: 'PUT' },
+            'getPhotos': { method: 'GET', isArray: true, url: 'api/models/:id/photos' }
         });
     }
 })();

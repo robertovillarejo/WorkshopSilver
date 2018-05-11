@@ -1,17 +1,17 @@
 {
   "generator-jhipster": {
     "promptValues": {
-      "packageName": "io.github.robertovillarejo",
+      "packageName": "io.github.robertovillarejo.silverworkshop",
       "nativeLanguage": "es"
     },
-    "jhipsterVersion": "4.8.2",
+    "jhipsterVersion": "4.14.4",
     "baseName": "WorkshopSilver",
-    "packageName": "io.github.robertovillarejo",
-    "packageFolder": "io/github/robertovillarejo",
+    "packageName": "io.github.robertovillarejo.silverworkshop",
+    "packageFolder": "io/github/robertovillarejo/silverworkshop",
     "serverPort": "8080",
     "authenticationType": "jwt",
-    "hibernateCache": "ehcache",
-    "clusteredHttpSession": false,
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
     "websocket": false,
     "databaseType": "sql",
     "devDatabaseType": "h2Disk",
@@ -22,7 +22,7 @@
     "buildTool": "maven",
     "enableSocialSignIn": false,
     "enableSwaggerCodegen": false,
-    "jwtSecretKey": "83ecb3f35777969e5882d58c71a58a1880ea9708",
+    "jwtSecretKey": "5aace94b5a5e6ca4c28568c7cb81ad8850064f22",
     "clientFramework": "angular1",
     "useSass": false,
     "clientPackageManager": "yarn",

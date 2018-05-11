@@ -20,7 +20,7 @@ spring:
     jackson:
         serialization.write_dates_as_timestamps: false
     cache:
-        type: none
+        type: simple
     datasource:
         type: com.zaxxer.hikari.HikariDataSource
         url: jdbc:h2:mem:WorkshopSilver;DB_CLOSE_DELAY=-1
@@ -56,10 +56,6 @@ spring:
 liquibase:
     contexts: test
 
-security:
-    basic:
-        enabled: false
-
 server:
     port: 10344
     address: localhost
@@ -92,7 +88,7 @@ jhipster:
     security:
         authentication:
             jwt:
-                secret: 83ecb3f35777969e5882d58c71a58a1880ea9708
+                secret: 5aace94b5a5e6ca4c28568c7cb81ad8850064f22
                 # Token is valid 24 hours
                 token-validity-in-seconds: 86400
     metrics: # DropWizard Metrics configuration, used by MetricsConfiguration

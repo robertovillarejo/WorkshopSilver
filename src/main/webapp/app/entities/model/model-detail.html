@@ -12,6 +12,7 @@
         <span class="glyphicon glyphicon-pencil"></span>
         <span class="hidden-sm-down" data-translate="entity.action.edit"> Edit</span>
     </button>
+
     <dl class="dl-horizontal jh-entity-details">
         <dt>
             <span data-translate="workshopSilverApp.model.name">Name</span>
@@ -22,7 +23,8 @@
 
         <dd ng-if="vm.currentPhoto">
             <a ng-click="vm.openFile(vm.currentPhoto.photoContentType, vm.currentPhoto.photo)">
-                <img data-ng-src="{{'data:' + vm.currentPhoto.photoContentType + ';base64,' + vm.currentPhoto.photo}}" style="max-width: 100%;" alt="photo image"/>
+                <img data-ng-src="{{'data:' + vm.currentPhoto.photoContentType + ';base64,' + vm.currentPhoto.photo}}" style="max-width: 100%;"
+                    alt="photo image" />
             </a>
         </dd>
 
@@ -30,9 +32,14 @@
             <span data-translate="workshopSilverApp.photo.footer">Footer</span>
         </dt>
         <dd>
-            <span>{{photo.footer}}</span>
+            <span>{{vm.currentPhoto.footer}}</span>
         </dd>
     </dl>
+
+    <button type="button" ui-sref="model-detail.new-photo" class="btn">
+        <span class="glyphicon"></span>&nbsp;
+        <span> Add Image</span>
+    </button>
 
     <button type="button" ng-click="vm.previousPhoto()" class="btn">
         <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;

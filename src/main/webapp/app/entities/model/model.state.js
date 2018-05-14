@@ -84,35 +84,36 @@
                     }]
                 }
             })
-            .state('model-photos', {
+            .state('model-detail.new-photo', {
                 parent: 'model-detail',
-                url: '/photos',
+                url: '/new-photo',
                 data: {
-                    authorities: ['ROLE_USER'],
-                    pageTitle: 'workshopSilverApp.model.home.title'
+                    authorities: ['ROLE_USER']
                 },
-                onEnter: ['$stateParams', '$state', '$uibModal', function ($stateParams, $state, $uibModal) {
+                onEnter: ['$stateParams', '$state', '$uibModal', function($stateParams, $state, $uibModal) {
                     $uibModal.open({
-                        templateUrl: 'app/entities/model/photos.html',
-                        controller: 'ModelPhotosController',
+                        templateUrl: 'app/entities/photo/photo-dialog.html',
+                        controller: 'PhotoDialogController',
                         controllerAs: 'vm',
                         backdrop: 'static',
                         size: 'lg',
                         resolve: {
-                            translatePartialLoader: ['$translate', '$translatePartialLoader', function ($translate, $translatePartialLoader) {
-                                $translatePartialLoader.addPart('model');
-                                $translatePartialLoader.addPart('photo');
-                                $translatePartialLoader.addPart('global');
-                                return $translate.refresh();
-                            }],
-                            entity: ['Model', '$stateParams', function (Model, $stateParams) {
-                                return Model.get({id: $stateParams.id}).$promise;
-                            }]
+                            entity: function () {
+                                return {
+                                    photo: null,
+                                    photoContentType: null,
+                                    footer: null,
+                                    id: null,
+                                    model: {
+                                        id: $stateParams.id
+                                    }
+                                };
+                            }
                         }
-                    }).result.then(function () {
-                        $state.go('^', {}, { reload: false });
-                    }, function () {
-                        $state.go('^');
+                    }).result.then(function() {
+                        $state.go('^', null, { reload: 'model-detail' });
+                    }, function() {
+                        $state.go('model-detail');
                     });
                 }]
             })

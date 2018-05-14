@@ -14,6 +14,7 @@
         vm.previousState = previousState.name;
         vm.openFile = DataUtils.openFile;
         vm.currentPhoto;    //The current photo to show
+        vm.photo;
 
         var index = 0;
 
@@ -61,6 +62,20 @@
                 vm.currentPhoto = vm.photos[index];
             }
         }
+
+        vm.setPhoto = function ($file, photo) {
+            if ($file && $file.$error === 'pattern') {
+                return;
+            }
+            if ($file) {
+                DataUtils.toBase64($file, function (base64Data) {
+                    $scope.$apply(function () {
+                        photo.photo = base64Data;
+                        photo.photoContentType = $file.type;
+                    });
+                });
+            }
+        };
 
     }
 })();

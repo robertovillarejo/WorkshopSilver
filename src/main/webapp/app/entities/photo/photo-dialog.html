@@ -54,7 +54,7 @@
             </div>
         </div>
 
-        <div class="form-group">
+        <div ng-if="!vm.photo.model" class="form-group">
             <label data-translate="workshopSilverApp.photo.model" for="field_model">Model</label>
             <select class="form-control" id="field_model" name="model" ng-model="vm.photo.model" ng-options="model as model.id for model in vm.models track by model.id">
                 <option value=""></option>

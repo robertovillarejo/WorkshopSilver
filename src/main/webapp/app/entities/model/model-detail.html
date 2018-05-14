@@ -3,15 +3,6 @@
         <span data-translate="workshopSilverApp.model.detail.title">Model</span> {{vm.model.id}}</h2>
     <hr>
     <jhi-alert-error></jhi-alert-error>
-    <dl class="dl-horizontal jh-entity-details">
-        <dt>
-            <span data-translate="workshopSilverApp.model.name">Name</span>
-        </dt>
-        <dd>
-            <span>{{vm.model.name}}</span>
-        </dd>
-    </dl>
-
     <button type="submit" ui-sref="{{ vm.previousState }}" class="btn btn-info">
         <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;
         <span data-translate="entity.action.back"> Back</span>
@@ -21,9 +12,35 @@
         <span class="glyphicon glyphicon-pencil"></span>
         <span class="hidden-sm-down" data-translate="entity.action.edit"> Edit</span>
     </button>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt>
+            <span data-translate="workshopSilverApp.model.name">Name</span>
+        </dt>
+        <dd>
+            <span>{{vm.model.name}}</span>
+        </dd>
 
-    <button type="button" ui-sref="model-photos({id:vm.model.id})" class="btn">
-        <span class="glyphicon"></span>&nbsp;
-        <span data-translate="workshopSilverApp.model.photos"> Photos</span>
+        <dd ng-if="vm.currentPhoto">
+            <a ng-click="vm.openFile(vm.currentPhoto.photoContentType, vm.currentPhoto.photo)">
+                <img data-ng-src="{{'data:' + vm.currentPhoto.photoContentType + ';base64,' + vm.currentPhoto.photo}}" style="max-width: 100%;" alt="photo image"/>
+            </a>
+        </dd>
+
+        <dt>
+            <span data-translate="workshopSilverApp.photo.footer">Footer</span>
+        </dt>
+        <dd>
+            <span>{{photo.footer}}</span>
+        </dd>
+    </dl>
+
+    <button type="button" ng-click="vm.previousPhoto()" class="btn">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;
+        <span> Previous</span>
+    </button>
+
+    <button type="button" ng-click="vm.nextPhoto()" class="btn">
+        <span class="glyphicon glyphicon-arrow-right"></span>&nbsp;
+        <span> Next</span>
     </button>
 </div>

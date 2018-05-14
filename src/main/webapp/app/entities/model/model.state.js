@@ -68,6 +68,7 @@
                 resolve: {
                     translatePartialLoader: ['$translate', '$translatePartialLoader', function ($translate, $translatePartialLoader) {
                         $translatePartialLoader.addPart('model');
+                        $translatePartialLoader.addPart('photo');
                         return $translate.refresh();
                     }],
                     entity: ['$stateParams', 'Model', function ($stateParams, Model) {
@@ -84,29 +85,36 @@
                 }
             })
             .state('model-photos', {
-                parent: 'model',
-                url: '/model/{id}/photos',
+                parent: 'model-detail',
+                url: '/photos',
                 data: {
                     authorities: ['ROLE_USER'],
                     pageTitle: 'workshopSilverApp.model.home.title'
                 },
-                views: {
-                    'content@': {
+                onEnter: ['$stateParams', '$state', '$uibModal', function ($stateParams, $state, $uibModal) {
+                    $uibModal.open({
                         templateUrl: 'app/entities/model/photos.html',
                         controller: 'ModelPhotosController',
-                        controllerAs: 'vm'
-                    }
-                },
-                resolve: {
-                    translatePartialLoader: ['$translate', '$translatePartialLoader', function ($translate, $translatePartialLoader) {
-                        $translatePartialLoader.addPart('model');
-                        $translatePartialLoader.addPart('global');
-                        return $translate.refresh();
-                    }],
-                    entity: ['Model', '$stateParams', function (Model, $stateParams) {
-                        return Model.get({id: $stateParams.id}).$promise;
-                    }]
-                }
+                        controllerAs: 'vm',
+                        backdrop: 'static',
+                        size: 'lg',
+                        resolve: {
+                            translatePartialLoader: ['$translate', '$translatePartialLoader', function ($translate, $translatePartialLoader) {
+                                $translatePartialLoader.addPart('model');
+                                $translatePartialLoader.addPart('photo');
+                                $translatePartialLoader.addPart('global');
+                                return $translate.refresh();
+                            }],
+                            entity: ['Model', '$stateParams', function (Model, $stateParams) {
+                                return Model.get({id: $stateParams.id}).$promise;
+                            }]
+                        }
+                    }).result.then(function () {
+                        $state.go('^', {}, { reload: false });
+                    }, function () {
+                        $state.go('^');
+                    });
+                }]
             })
             .state('model-detail.edit', {
                 parent: 'model-detail',

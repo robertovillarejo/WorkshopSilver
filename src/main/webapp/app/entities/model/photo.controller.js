@@ -5,21 +5,22 @@
         .module('workshopSilverApp')
         .controller('ModelPhotosController', ModelPhotosController);
 
-    ModelPhotosController.$inject = ['DataUtils', 'Model', 'entity'];
+    ModelPhotosController.$inject = ['DataUtils', 'Model', 'entity', 'Photo', 'Lightbox', '$scope'];
 
-    function ModelPhotosController(DataUtils, Photo) {
+    function ModelPhotosController(DataUtils, Model, entity, Photo, Lightbox, $scope) {
 
         var vm = this;
 
+        vm.model = entity;
         vm.photos = [];
         vm.openFile = DataUtils.openFile;
         vm.byteSize = DataUtils.byteSize;
 
-        loadAll(vm.id);
+        loadAll(entity.id);
 
         function loadAll(id) {
             if (id) {
-                Model.getPhotos(function (photos) {
+                Model.getPhotos({id: entity.id}, function (photos) {
                     vm.photos = photos;
                 });
             }

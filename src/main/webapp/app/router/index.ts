@@ -24,6 +24,24 @@ const JhiLogsComponent = () => import('../admin/logs/logs.vue');
 const JhiAuditsComponent = () => import('../admin/audits/audits.vue');
 const JhiMetricsComponent = () => import('../admin/metrics/metrics.vue');
 /* tslint:disable */
+// prettier-ignore
+const Model = () => import('../entities/model/model.vue');
+// prettier-ignore
+const ModelUpdate = () => import('../entities/model/model-update.vue');
+// prettier-ignore
+const ModelDetails = () => import('../entities/model/model-details.vue');
+// prettier-ignore
+const Mold = () => import('../entities/mold/mold.vue');
+// prettier-ignore
+const MoldUpdate = () => import('../entities/mold/mold-update.vue');
+// prettier-ignore
+const MoldDetails = () => import('../entities/mold/mold-details.vue');
+// prettier-ignore
+const Photo = () => import('../entities/photo/photo.vue');
+// prettier-ignore
+const PhotoUpdate = () => import('../entities/photo/photo-update.vue');
+// prettier-ignore
+const PhotoDetails = () => import('../entities/photo/photo-details.vue');
 // jhipster-needle-add-entity-to-router-import - JHipster will import entities to the router here
 
 Vue.use(Router);
@@ -140,6 +158,81 @@ export default new Router({
       name: 'JhiConfigurationComponent',
       component: JhiConfigurationComponent,
       meta: { authorities: ['ROLE_ADMIN'] }
+    }
+    ,
+    {
+      path: '/entity/model',
+      name: 'Model',
+      component: Model,
+      meta: { authorities: ['ROLE_USER'] }
+    },
+    {
+      path: '/entity/model/new',
+      name: 'ModelCreate',
+      component: ModelUpdate,
+      meta: { authorities: ['ROLE_USER'] }
+    },
+    {
+      path: '/entity/model/:modelId/edit',
+      name: 'ModelEdit',
+      component: ModelUpdate,
+      meta: { authorities: ['ROLE_USER'] }
+    },
+    {
+      path: '/entity/model/:modelId/view',
+      name: 'ModelView',
+      component: ModelDetails,
+      meta: { authorities: ['ROLE_USER'] }
+    }
+    ,
+    {
+      path: '/entity/mold',
+      name: 'Mold',
+      component: Mold,
+      meta: { authorities: ['ROLE_USER'] }
+    },
+    {
+      path: '/entity/mold/new',
+      name: 'MoldCreate',
+      component: MoldUpdate,
+      meta: { authorities: ['ROLE_USER'] }
+    },
+    {
+      path: '/entity/mold/:moldId/edit',
+      name: 'MoldEdit',
+      component: MoldUpdate,
+      meta: { authorities: ['ROLE_USER'] }
+    },
+    {
+      path: '/entity/mold/:moldId/view',
+      name: 'MoldView',
+      component: MoldDetails,
+      meta: { authorities: ['ROLE_USER'] }
+    }
+    ,
+    {
+      path: '/entity/photo',
+      name: 'Photo',
+      component: Photo,
+      meta: { authorities: ['ROLE_USER'] }
+    },
+    {
+      path: '/entity/photo/new',
+      name: 'PhotoCreate',
+      component: PhotoUpdate,
+      meta: { authorities: ['ROLE_USER'] }
+    },
+    {
+      path: '/entity/photo/:photoId/edit',
+      name: 'PhotoEdit',
+      component: PhotoUpdate,
+      meta: { authorities: ['ROLE_USER'] }
+    },
+    {
+      path: '/entity/photo/:photoId/view',
+      name: 'PhotoView',
+      component: PhotoDetails,
+      meta: { authorities: ['ROLE_USER'] }
     }
     // jhipster-needle-add-entity-to-router - JHipster will add entities to the router here
   ]

@@ -1,0 +1,24 @@
+{
+  "workshopSilverApp": {
+    "model": {
+      "home": {
+        "title": "Models",
+        "createLabel": "Crear nuevo Model",
+        "createOrEditLabel": "Crear o editar Model",
+        "notFound": "No Model found"
+      },
+      "created": "Un nuevo Model ha sido creado con el identificador {{ param }}",
+      "updated": "Un Model ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Model ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Model {{ id }}?"
+      },
+      "detail": {
+        "title": "Model"
+      },
+      "name": "Name",
+      "photos": "Photos",
+      "molds": "Molds"
+    }
+  }
+}

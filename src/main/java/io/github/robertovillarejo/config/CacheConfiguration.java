@@ -43,6 +43,12 @@ public class CacheConfiguration {
             createCache(cm, io.github.robertovillarejo.domain.User.class.getName());
             createCache(cm, io.github.robertovillarejo.domain.Authority.class.getName());
             createCache(cm, io.github.robertovillarejo.domain.User.class.getName() + ".authorities");
+            createCache(cm, io.github.robertovillarejo.domain.Model.class.getName());
+            createCache(cm, io.github.robertovillarejo.domain.Model.class.getName() + ".photos");
+            createCache(cm, io.github.robertovillarejo.domain.Model.class.getName() + ".molds");
+            createCache(cm, io.github.robertovillarejo.domain.Mold.class.getName());
+            createCache(cm, io.github.robertovillarejo.domain.Mold.class.getName() + ".models");
+            createCache(cm, io.github.robertovillarejo.domain.Photo.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

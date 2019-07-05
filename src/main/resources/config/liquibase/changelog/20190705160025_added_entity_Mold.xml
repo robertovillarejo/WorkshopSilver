@@ -42,6 +42,14 @@
 
         <addPrimaryKey columnNames="mold_id, models_id" tableName="mold_models"/>
         
+        <loadData
+                  file="config/liquibase/data/mold_models.csv"
+                  separator=","
+                  tableName="mold_models">
+            <column name="models_id" type="numeric"/>
+            <column name="mold_id" type="numeric"/>
+        </loadData>
+        
     </changeSet>
     <!-- jhipster-needle-liquibase-add-changeset - JHipster will add changesets here, do not remove-->
 
@@ -56,7 +64,7 @@
     <changeSet id="20190705160025-1-data" author="jhipster" context="faker">
         <loadData
                   file="config/liquibase/data/mold.csv"
-                  separator=";"
+                  separator=","
                   tableName="mold">
             <column name="id" type="numeric"/>
             <column name="number" type="string"/>

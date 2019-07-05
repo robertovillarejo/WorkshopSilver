@@ -1,11 +1,1007 @@
-id;name
-1;mobile Fish
-2;Home Loan Account Table Comput
-3;Trace
-4;Savings Account alarm
-5;Tasty Metal Bacon
-6;red Chips Soap
-7;Home Loan Account
-8;web-readiness
-9;Namibia
-10;Steel zero administration
+id,name
+1,"Cruz ""Jesús es mi señor"""
+2,Biblia
+3,Medalla San Benito
+4,Dije de Calavera
+5,Dije grande de Virgen de Guadalupe
+6,Dije de niña
+7,Dije de elefante
+8,Dije de rostro de Cristo
+9,Dije de Santa Muerte
+10,Herradura chica
+11,Dije de rosita
+12,Dijes de niños
+13,Anillo de misterio
+14,Dije de eclipse
+15,Dije de máscara
+16,Asa de Santa Muerte
+17,Dije de rosa
+18,Palas chicas
+19,Dije de herradura grande
+20,Dije de Virgen de Guadalupe
+21,"Medalla ""X fa"""
+22,Dije del rosario del Señor de la Misericordia
+23,Dije de lagartija
+24,Pala grande
+25,"Dije de corazón ""love"""
+26,Maxilar cráneo chico
+27,Dije de tortuga
+28,Rostro de Cristo
+29,Delfín
+30,Sagrada familia
+31,Dije de delfín
+32,Ranita para pulsera
+33,Aretes de elefante
+34,Cruz de caravaca
+35,Caja Pedro
+36,Dije de niño
+37,Estrella
+38,Aretes de perritos
+39,Plumas
+40,Calavera fumadora
+41,Eslabón para cadena
+42,Virgen de Guadalupe mediana
+43,"Corazón con mano ""Qué tal si sí"""
+44,Dije de dragón
+45,Dije de delfín
+46,"Medalla ""plis"""
+47,Niños pareja
+48,Calavera
+49,Herradura cuadrada
+50,Dije de niños individual
+51,Mano de dama
+52,Llave de San Benito
+53,Cola de ballena
+54,Pin de nacimiento
+55,Dije de sandalia cruzada
+56,Raqueta
+57,"Arete de corazón ""love"""
+58,Mano
+59,Dije de tortuga
+60,Corazón
+61,Dije de rosario de Virgen de Guadalupe
+62,Balanza Santa Muerte
+63,Dije de gallo
+64,Dije de perrita
+65,Dije de ranita
+66,Cruz cuadrada (ganchos)
+67,Dije de perro
+68,Cabra
+69,Gasparín
+70,Delfín de pulsera
+71,Dije de pantera
+72,Bisel decorado
+73,Rana para pulsera
+74,Tortuga plana
+75,Timón
+76,Pulsera gatos
+77,Cabra
+78,Logotipo de encuentros conyugales
+79,Cabeza de águila
+80,Árbol de Adán y Eva
+81,Tuerca
+82,Delfín portalente
+83,Óvalo
+84,Arracada
+85,Anillo Jesús-Corazón-Paloma-Cristianos
+86,Anillo de primaria
+87,Gallinita
+88,Renos
+89,Dije de bruja volando
+90,Campanas
+91,Flor perforada
+92,FOX
+93,Caparazón de tortuga
+94,Prendedor de colibrí chico
+95,Candado para llavero
+96,Cobra
+97,Madona
+98,Arracada
+99,Broche
+100,Corazón perforado
+101,Cabeza de Seguro
+102,Cola de gato
+103,Conchitas
+104,Moneda
+105,Luna
+106,Aspas
+107,Anillo Corazón-Jesús
+108,Símbolo médico
+109,Dije de gato
+110,Cruz cactus
+111,Yves Rocher
+112,Base de Luna
+113,Momia
+114,Colibrí plano para flor
+115,Anillo Jesús-Cristianos
+116,Moneda con cruz
+117,Oso
+118,Dije de rana
+119,Virgen de Guadalupe
+120,Anillo de delfín
+121,Cubo perforado
+122,Flor perforada
+123,Tornillo
+124,Corazón perforado
+125,Arete alcatráz
+126,Jardín chico
+127,Dije de saxofón chico
+128,Borrego
+129,Dije A.A.
+130,Conejo chico
+131,Cruz de alambre
+132,Unicornio
+133,Corcholata
+134,Hada campanita
+135,Brujita
+136,Arca de Noé
+137,Tornillos
+138,Gato
+139,Caballo galopando
+140,Pescado calado
+141,Herradura
+142,Estrella lisa de arete y pulsera derecha
+143,Pulpo
+144,Dije de hoja
+145,Estrella pulsera
+146,Alas HLJ
+147,Gato
+148,Ballena
+149,
+150,Mariposa/entity/mold
+151,Moroni mediano
+152,Tuercas
+153,I am a child of God
+154,Concha Shell
+155,Rana maciza
+156,Raqueta
+157,Tubo de polo
+158,Dos asas Doña Yola
+159,Mariposa
+160,Pluma
+161,Eslabón
+162,Tubo de polo
+163,T de Otty
+164,Colmillo
+165,Concha shell
+166,Arete
+167,Corazón
+168,Dije de caballos
+169,Tuercas
+170,Propela grande
+171,Placa con búho
+172,Tubos
+173,Abejita
+174,Tuercas
+175,Ángel
+176,Ángel de la guarda
+177,Rosita
+178,Anillo de Primaria
+179,Anillo búho
+180,Tubo de polo
+181,Hipopótamo
+182,Caballo
+183,Ángel infantil con corazón
+184,Perrita
+185,Luna con estrella
+186,Arras
+187,Vestido chico
+188,Lunas
+189,Señor Vicente Medalla
+190,Mosca
+191,Jirafas
+192,Elote Don Panchito
+193,Delfín Otty
+194,Pernos
+195,Dije de barco
+196,Mariposa
+197,Espuela
+198,Volante
+199,Tubo de polo
+200,Coronitas
+201,Flor colibrí movible
+202,Corno
+203,Mariposa
+204,Medalla de virgen
+205,Bulto de San Judas Tadeo
+206,Encuentros conyugales
+207,Dije grande de mazón
+208,Caballito de mar
+209,Ratón atrapado
+210,Piernas
+211,Arca de Noé
+212,Dije chico de mazón
+213,Sol y luna
+214,Estrella de David
+215,"Medalla ""Una chica genial"""
+216,Calavera cráneo
+217,Cuerpo bailarina
+218,Hada campanita
+219,Maletas
+220,Pentagrama chico
+221,Barquito
+222,Sandalia lujo
+223,Acordeón
+224,Sandalia
+225,Caimán
+226,Cruz
+227,Barco
+228,Broches
+229,Madona
+230,Nota musical
+231,Buceadora
+232,Logotipo de encuentros conyugales
+233,Corazón
+234,Coyote
+235,Tortuga
+236,Asa boleada
+237,Búho
+238,Cangrejo
+239,Mariposa
+240,"Medalla ""X fa cuídame, no seas mala"""
+241,Asas
+242,Estrella para espuela
+243,Elefantes 
+244,Anillo de perno
+245,Cruz lisa hueca
+246,Tennis
+247,Nuggets
+248,Estrella de mar chica
+249,Corona chica
+250,Naturaleza divina
+251,Tornillos
+252,Delfín 
+253,Sandaliade pata de gallo
+254,Manos
+255,Medalla del Papa
+256,Libro del Mormón y Moroni
+257,Sombrero de la Catrina
+258,San Judas Tadeo
+259,Flor colibrí movible
+260,Candado
+261,Niños
+262,Clave de Sol
+263,Llavero
+264,Alacrán chico
+265,Anillo HLJ
+266,Anillo HLJ
+267,Anillo HLJ clásico
+268,Sandalia de pata de gallo
+269,Luna con estrellas
+270,Trébol de cuatro hojas
+271,Anillo placa
+272,Flor colibrí movible
+273,Moroni
+274,Patineta
+275,Máscara
+276,Mano con anillo
+277,
+278,Nuggets
+279,Teléfono
+280,Estrellas
+281,Violines 
+282,Leones
+283,Medalla de San Antonio
+284,Trébol de cuatro hojas
+285,Sandalia de flor
+286,Raqueta
+287,Llave
+288,Sol
+289,Virgen de Guadalupe
+290,Ballena
+291,Tuercas
+292,Anillo HLJ manos
+293,Arete de aspas
+294,Broches
+295,Mariposa
+296,Tuercas
+297,Delfín
+298,Luna con estrellas
+299,Calavera mediana
+300,Volante
+301,Dije de calavera
+302,Doctor
+303,Estrella chica
+304,Círculos
+305,Corazón bisel
+306,Tubos
+307,Torito
+308,Círculos
+309,Calavera mediana
+310,Sandalia sencilla
+311,
+312,Paloma
+313,Letras chinas
+314,Sandalia de flor
+315,Mariposa
+316,Sombrero
+317,Trébol de cuatro hojas
+318,Serpiente
+319,
+320,Dije grande de mazón
+321,Ángel
+322,Gallito
+323,Ojos
+324,Niño rezando
+325,Colibrí
+326,Óvalo liso
+327,Pulpo izquierdo
+328,Dragón chico
+329,Pepe
+330,Tabla de surf
+331,Ángel
+332,Pies San Francisco
+333,Arete destello
+334,Cuernitos
+335,Sol
+336,Dije destello
+337,Anillo
+338,Niños
+339,Cruz de Caravaca
+340,Cebras
+341,Llave de la paz
+342,Torito
+343,Rana
+344,Torito
+345,
+346,Niños
+347,Volante
+348,Garra
+349,Corona de gota
+350,Vestido
+351,Mariposa
+352,Arete destello
+353,
+354,Llave perforada
+355,Dije destello
+356,Campana
+357,Llave perforada
+358,Anillo
+359,Leones
+360,Anillo
+361,Arete de aspas
+362,Ying Yang
+363,Arracada
+364,Liga chica
+365,Sol
+366,Estrellas
+367,Arete de aspas
+368,Arete de aspas
+369,
+370,Dragón
+371,Llave perforada
+372,Arete destello
+373,Bisel bolitas
+374,Dije de perritos
+375,Volante
+376,Corona grande
+377,Arete de óvalo
+378,Abejita
+379,Candado
+380,Cebras
+381,Flor de Nochebuena
+382,Llave perforada
+383,Bisel barras
+384,Pernos
+385,Búho
+386,Herradura
+387,Alacrán chico
+388,Placa Instituto Universitario de Investigación
+389,Arca de Noé
+390,Caja
+391,Placa Instituto Universitario de Investigación
+392,Libro del Mormón
+393,Ojo
+394,Bota
+395,Ángel
+396,Brazo
+397,Corazón
+398,
+399,
+400,
+401,Dados
+402,Botón
+403,Corazones
+404,Pez
+405,Racimo de uvas
+406,Corazón con asa
+407,Pie
+408,Burrito
+409,Billete
+410,Botón
+411,Casquilla espiral
+412,Elección y Responsabilidad
+413,Sopranos
+414,Sergio Asas portaretrato
+415,Cono
+416,Flor
+417,Maletas
+418,
+419,Casquilla espiral chica
+420,Herradura
+421,Eslabón
+422,Flor para abeja
+423,Eslabón
+424,Bisel gota
+425,Casquilla
+426,Corazón con espada chico
+427,Conocimiento
+428,Calavera
+429,Llave Sanitas
+430,Ballena chica
+431,Guajolote
+432,Valor individual
+433,Pez
+434,Cono
+435,Llave del Amor chica
+436,Caballo
+437,Pie chico
+438,Gota faceteada grande
+439,Botón
+440,Sopranos
+441,Arete de ramas
+442,Sopranos
+443,Nostradamus
+444,Pie
+445,Calendario Azteca
+446,
+447,Corazón con asa
+448,Mano con brazo
+449,Canoa
+450,Candado
+451,Medalla Legión de María
+452,Pie
+453,Avión 
+454,Avión 
+455,Botón
+456,
+457,Tortuga
+458,Medalla Señor de la Misericordia
+459,Maleta
+460,Maleta
+461,Soy una hija de Dios
+462,
+463,Maletas chicas
+464,Medalla Jesús con niño
+465,Llave de trébol de cuatro hojas y llave de carita feliz
+466,Cono
+467,
+468,Corazón
+469,
+470,Borrego
+471,Sergio Asas portaretrato
+472,Corazón con espada grande
+473,Brujita
+474,Llaves de la paz
+475,Pie
+476,Águila
+477,Pingüino
+478,Medalla San José
+479,Flor blasónica
+480,
+481,Gota faceteada grande
+482,Pies chicos
+483,Pierna
+484,Anillo corazones calados
+485,Medalla Sagrada Familia
+486,Nugget
+487,San Antonio infantil
+488,Medalla del Papa
+489,San Bernadete
+490,Perrito
+491,Nugget
+492,Ascención de María
+493,Cruz
+494,Corona
+495,Elefante
+496,Niño de Praga
+497,Gota chica
+498,Santa Lucy
+499,Virgen de Guadalupe
+500,Sagrada Familia
+501,Espíritu Santo Triángulo
+502,Candado
+503,Cáliz
+504,Haz lo justo
+505,Mojarra
+506,Medalla del Papa
+507,Medalla en gota Virgen María
+508,Santa Teresa
+509,Medalla Virgen María Grande
+510,Virgen de Fátima
+511,Ángel guardián
+512,Espíritu Santo
+513,Medalla San Juan Diego chica
+514,Medalla María
+515,Medalla Jesucristo con cuatro santos
+516,Santa Rosa Mísitica
+517,San Rafael
+518,Medalla Ruega por nosotros
+519,Espíritu Santo Triángulo
+520,San Judas Tadeo
+521,Espíritu Santo Corazón
+522,Con nuestra señora de Guadalupe
+523,Perro Schnauzer
+524,San Judas
+525,Niño de Praga corazón
+526,Cruz con asa
+527,San Antonio
+528,Medalla Ruega por nosotros
+529,El papa con nuestra señora Czestochowa
+530,Virgen del Carmen
+531,Medalla rostro de Jesús
+532,Manos en corazón
+533,San Judas
+534,Medalla chica El papa
+535,Medalla chica 1531
+536,Espíritu Santo con Sagrada Familia
+537,Ángel de la guarda
+538,San Benedicto con cruz
+539,Santa Teresa de Ávila
+540,Medalla chica Virgen María
+541,Arca de Noé
+542,Sagrada Familia
+543,Sagrado corazón de Jesús con ángel de la guarda
+544,Medalla de Santo niño de Atocha
+545,Señor de la misericordia
+546,Saint Michael con Saint Ann
+547,Niño Jesús y Cáliz
+548,Cruz cuadrada
+549,Soy un hijo de Dios
+550,Saint Michael
+551,Padre Pío
+552,Espíritu Santo Triángulo
+553,Medalla Virgen de Carmel
+554,Casquilla
+555,Pié
+556,Casquilla
+557,San Antonio
+558,San Judas
+559,Cono
+560,San Juan Diego
+561,Virgen con niño Dios
+562,Sagrado corazón de Jesús
+563,Espíritu Santo Corazón
+564,Una chica genial
+565,Señor de la misericordia
+566,Medalla Espíritu Santo
+567,San Judas / Virgen de Fátima
+568,Rostro de Jesús
+569,Medalla de la virgen de Juan Diego
+570,San Ignacio de Loyola
+571,Señor de la misericordia
+572,Medalla rostro de Cristo
+573,Divino niño de Colombia con nuestra señora de Guadalupe
+574,San Miguel
+575,Mojarra
+576,Nugget
+577,San José
+578,Ángel azteca
+579,Ángel infantil
+580,Medalla virgen infantil
+581,San Nicolás
+582,San Miguel infantil
+583,San Antonio infantil
+584,Plis cuídame mucho
+585,Huellas
+586,Medalla de ángel infantil
+587,Ángel chico con corazón mitad derecha
+588,Madre Teresa de Calcuta
+589,San Antonio
+590,Virgen con Espíritu Santo
+591,Sagrado corazón
+592,Angelito
+593,Jesús y María
+594,Arca de Noé
+595,Rosario Virgen de Guadalupe
+596,Rosario Virgen de Guadalupe
+597,Ángel chico infantil
+598,San Martín de Porres
+599,Ángel de perfil con corazón
+600,Cristo y María
+601,Espíritu Santo Corazón
+602,San Judas infantil
+603,Medalla chica de San Juan Diego
+604,Pierna
+605,Alas
+606,Sagrado corazón de María
+607,Santa Teresa
+608,Sagrado corazón
+609,Corona
+610,Buenas obras
+611,San Antonio infantil
+612,Ángel
+613,Medalla Sagrado corazón infantil
+614,Ángel hincado
+615,Ángel
+616,Cristo y María
+617,Rosario
+618,Manos en oración
+619,San Nicolás
+620,San Miguel infantil
+621,San Benito
+622,Angelito con corazón mitad izquierda
+623,Niño de Colombia
+624,Corazón espíritu
+625,San Antonio infantil
+626,Medalla Sagrado corazón
+627,Cara de ángel
+628,San Charbel infantil
+629,Niño de Colombia
+630,Ángel con corazón
+631,Rostro de cristo
+632,Virgen
+633,Alas planas
+634,Medalla de Jesús
+635,Fé
+636,Rosario
+637,Medalla infantil ángel
+638,Virgen María
+639,Ángel con corazón
+640,Rosario
+641,Rosario
+642,Medalla infantil ángel x fa
+643,Me urge galán
+644,Ángel completo
+645,Ángel chico
+646,Medalla infantil
+647,Ángel con corazón
+648,El papa
+649,Medalla infantil San Charbel
+650,Ángel inclinado
+651,Medalla infantil plis
+652,Medalla 1531
+653,Ángel
+654,Ángel con uñetas
+655,Ángel completo
+656,Nuestra señora del perpetuo socorro
+657,Ángel chico completo
+658,San Pedro
+659,San Pedro
+660,Ángeles chicos
+661,Ángeles chicos
+662,San Miguel
+663,San Miguel
+664,Gato
+665,Niño y niña rezando
+666,Manos
+667,Oso chico
+668,Cruz cuadrada
+669,Integridad
+670,Pez
+671,Brazo
+672,Maletas
+673,Cruz cuadrada
+674,Love arete
+675,Cruz
+676,Una chica genial
+677,Biblia
+678,Delfín
+679,Dije de elefantes
+680,Ratón atrapado
+681,Cruz
+682,Rana
+683,Llave de sol
+684,Tuercas
+685,Eslabón moto
+686,Tuercas
+687,Puño
+688,Mano
+689,Moto
+690,IMSS
+691,Tuercas
+692,Arca de Noé
+693,Tuercas
+694,Cruz cuadrada (ganchos)
+695,Carnero
+696,Minion
+697,Tuercas
+698,Logo IMSS grande
+699,Dije de corona
+700,Delfines chicos encontrados para pulsera
+701,Placa consejero
+702,Logo IMSS chico
+703,Cruz de cubos
+704,Tuercas
+705,Eslabón
+706,Tuercas
+707,Máquina
+708,Búfalo
+709,Brazo hindú
+710,Eslabón chico
+711,Abeja chica
+712,Serpiente
+713,Campanas
+714,Gancho
+715,Abeja chica pulsera
+716,Murciélago
+717,Golondrina
+718,Hoja prendedor
+719,Bailarina dije
+720,Toro
+721,Bola
+722,Pentagrama grande
+723,Aretes de notas
+724,Delfín sobre agua prendedor
+725,Arete de alcatráz
+726,Girasol
+727,Caballo Pony
+728,Callato completo pequeño
+729,Estrella de David
+730,Arete Eclipse
+731,Dije de ángel con listón
+732,Sol con espejo
+733,Sol con piedra
+734,Lagartija decorada
+735,Lagartija burilada
+736,Prendedor de delfín doble
+737,Arete de gato
+738,Violín prendedor
+739,Prendedor de ángel con corazón
+740,Colibrí con su flor
+741,Colibrí curvo prendedor
+742,Niños en columpio prendedor
+743,Burrita navideña
+744,Arete de vendedora
+745,Lagartija pequeña
+746,Gato con ratón prendedor
+747,Libélula prendedor
+748,Anillo de rana lisa
+749,Dije de San Miguel Arcángel
+750,Asas de Sergio
+751,Cruz del sagrado corazón
+752,Anillos varios
+753,Asas
+754,Luna con estrella dije
+755,Alas de duende
+756,Aretes de luna
+757,Arete de eclipse
+758,Prendedor Madona
+759,Arracadas de paloma
+760,Arracadas de paloma
+761,Arracadas de paloma
+762,Arracadas de paloma
+763,Jaguar arete
+764,Moño listón prendedor
+765,Prendedor Atenas
+766,Toro de jaripeo izquierdo
+767,Cola de ballena
+768,Prendedor de moño rayado
+769,Prendedor de cisne
+770,Medalla de San Judas Tadeo
+771,Jugadores de basquet
+772,Araña
+773,"Medalla ""Nuestra señora de Loreto"""
+774,Brazalete de ballena
+775,Buceadora prendedor dije
+776,Ángel de mano extendida
+777,Prendedor de tranca
+778,Aretes de pascua
+779,Prendedor de gato con cola movible
+780,Caballo y cola de ballena
+781,Caracol pulsera
+782,Perro salchicha chico
+783,Dije de alacrán
+784,Botas vaqueras
+785,Rana prendedor
+786,Pez espada prendedor
+787,Gato largo (moño)
+788,Arete de alcatraces derecho
+789,Dije de luna
+790,Pascua prendedor
+791,Gato vaquero
+792,Vendedora de alcatraces
+793,Hebilla de caballo
+794,Hebilla Nashville
+795,Hebilla rotaria
+796,Cuadro decorado pulsera
+797,Bolsa $1000
+798,Flor pensamiento prendedor
+799,Dije de doble corazón
+800,Cobra
+801,Santa Claus chico y broche
+802,Delfín curvo
+803,Cruz
+804,Casquilla decorada
+805,Prendedor de pino
+806,Piñata
+807,Guitarra
+808,Gaviota portalente
+809,"Cruz ""tercer milenio"""
+810,Alcatráz
+811,Estrella de mar granulada
+812,Cigüeña
+813,Sol chato
+814,Moneda martillada
+815,Venado
+816,Piano
+817,Moneda martillada
+818,Grillo y barco
+819,Delfín largo
+820,Sagitario
+821,Pavorreal
+822,Cruz con ángeles
+823,Estrella de Benito
+824,Llavero IMSS
+825,Gato parado
+826,Cabeza caballo
+827,Sol doble cara picado
+828,Torito mediano
+829,Egipcio
+830,Llave de sol grande
+831,Moto chica
+832,Mantarraya
+833,Elefante portalentes
+834,Nacimiento
+835,Aretes de delfínes
+836,Pastorcito
+837,Aretes de delfínes
+838,Gato del país de las maravillas
+839,Tres caballos
+840,Ángel portalente
+841,Moneda
+842,Brujitas
+843,Barco
+844,Sol picado
+845,Ramo de girasoles
+846,Pavorreal
+847,Tortuga
+848,Santa gordo
+849,Espiral Otty
+850,Ángel de manos extendidas
+851,Santa Claus plano
+852,Eclipse
+853,Portalente de alcatraces
+854,Motocicleta
+855,Aretes de delfín
+856,Lagartija mediana
+857,Botón
+858,Botón
+859,Dije de virgen de Guadalupe
+860,Anillo uñas
+861,Tortugas y ranas caladas
+862,Botón
+863,Arete de corazones
+864,Anillo de corazones
+865,Anillo de mano
+866,Anillo con corazón y argolla
+867,Anillo liso
+868,Anillo Encuentros conyugales caballero
+869,Anillo Encuentros conyugales dama
+870,Gato con rama
+871,Colibrí
+872,Lirio
+873,Calendario azteca
+874,Foca portalentes
+875,Zapatilla
+876,Colibrí
+877,Prendedor rana fija
+878,Bailarina
+879,Calandria
+880,Campana navideña
+881,Aretes de rana
+882,Trineo
+883,Estrella de mar grande
+884,Casquilla decorada
+885,Hoja brazalete
+886,Flora y fauna
+887,Cruz calada
+888,Sol chato y sol picudo
+889,Cruz con ángeles grande
+890,Cráneo
+891,Delfínes sobre olas
+892,Ángel con trompeta
+893,Ángel
+894,Saxofón
+895,
+896,Llavero María e Isabel
+897,Delfín
+898,Mujer
+899,Rostro de Cristo
+900,Maestro
+901,Santa Muerte
+902,Casquilla superior Liahona
+903,Alas delgadas
+904,Abeja
+905,Placa redonda con bolitas
+906,Guitarra
+907,HLJ Caballero de lujo
+908,Llave atrévete a soñar
+909,Tabla de los diez mandamientos / Placa para anillo del templo
+910,Mitad de calabaza
+911,Cruz papal ligera
+912,Pareja
+913,Flor para colibrí movible
+914,Pantera
+915,Águila
+916,Llave de la libertad
+917,Ángel
+918,Cristo
+919,
+920,Estrella de mar
+921,Arete con colgantes D' Escorcia
+922,Hada grande
+923,Duende
+924,Tocs
+925,Soles
+926,Tiburón
+927,Calavera
+928,Arca / Moroni plano
+929,Llavero de cabeza de caballo
+930,Cabeza caballo
+931,Cruz papal ligera
+932,Tortuga
+933,Presbitero
+934,Valiente
+935,Dije de aspas
+936,Alas
+937,Sol azteca arete/dije
+938,Arete con colgantes D' Escorcia
+939,Hada chica
+940,
+941,Libélula/alas de libélula
+942,Mamá elefante
+943,Diácono
+944,Elder
+945,Cráneo con tubos
+946,Llavero UH punta diamante
+947,Llave del amor
+948,Llave de la suerte
+949,Llave
+950,Llave
+951,Llave
+952,Buzo
+953,Llavero de cabeza de caballo
+954,Arracada Doña Lety
+955,Logo IMSS plano para llavero
+956,Flamingo
+957,Anillo
+958,Anillo
+959,Arete
+960,Arete
+961,Pompis de elefante
+962,Hojas
+963,Blue Demon
+964,Virgen de Guadalupe doble imagen
+965,Conejo
+966,Toro grande
+967,Cruz de la Santísima Trinidad
+968,Arracada
+969,Toro derecho Oty
+970,Cabeza de ganado chica original
+971,Cruz papal ligera
+972,Bota
+973,Crucifijo
+974,Rostro Santísima Trinidad
+975,Cabeza ganado grande original
+976,Colmillo dije
+977,Cruz de la Santísima Trinidad
+978,Sol picudo
+979,Portabolsa
+980,Casquilla calada
+981,Casquilla espiral
+982,Casquilla espiral
+983,Medalla Juan Pablo II
+984,Corazón con palomas
+985,Caballo y elefante
+986,Contrabroche (281)
+987,Foca
+988,Cruz decorada
+989,Llavero estrella de David
+990,Cruz papal ligera
+991,Portalente de elefantes
+992,Cruz con estrella
+993,Rostro Santísima Trinidad
+994,Casquilla calada
+995,Arracada grande
+996,Crucifijo
+997,Broche (270)
+998,Caballo y dragón
+999,San Pedro
+1000,Virgen de Guadalupe doble vista
+1001,Arete de gota
+1002,Delfín movible
+1003,Ángel
+1004,Luna
+1005,
+1006,Bolsa y zapatilla

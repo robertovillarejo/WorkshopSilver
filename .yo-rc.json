@@ -1,13 +1,14 @@
 {
   "generator-jhipster": {
     "promptValues": {
-      "packageName": "io.github.robertovillarejo.silverworkshop",
+      "packageName": "io.github.robertovillarejo",
       "nativeLanguage": "es"
     },
-    "jhipsterVersion": "4.14.4",
+    "jhipsterVersion": "6.1.2",
+    "applicationType": "monolith",
     "baseName": "WorkshopSilver",
-    "packageName": "io.github.robertovillarejo.silverworkshop",
-    "packageFolder": "io/github/robertovillarejo/silverworkshop",
+    "packageName": "io.github.robertovillarejo",
+    "packageFolder": "io/github/robertovillarejo",
     "serverPort": "8080",
     "authenticationType": "jwt",
     "cacheProvider": "ehcache",
@@ -20,20 +21,33 @@
     "messageBroker": false,
     "serviceDiscoveryType": false,
     "buildTool": "maven",
-    "enableSocialSignIn": false,
     "enableSwaggerCodegen": false,
-    "jwtSecretKey": "5aace94b5a5e6ca4c28568c7cb81ad8850064f22",
-    "clientFramework": "angular1",
-    "useSass": false,
-    "clientPackageManager": "yarn",
-    "applicationType": "monolith",
+    "jwtSecretKey": "ZjA2NmM1N2YwZGNlZDkyMzJhYjI0NTFiNzk3NTBkNDE4ODY1MTY4YjNkOGI4MWVhM2ZkODU2ODQ2ZWZkZGFmNTliOWVkY2MyY2M3ZjA4NDk2ZjhjNjg5YTk2MjkzODUzOWQ0YjVjYmIyZjgwOTAyYTQ1Y2Q1ZWU3NTIyMGJmMzU=",
     "testFrameworks": [],
     "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [
+      {
+        "name": "generator-jhipster-vuejs",
+        "version": "1.1.0"
+      }
+    ],
     "enableTranslation": true,
+    "clientPackageManager": "npm",
     "nativeLanguage": "es",
-    "languages": [
-      "es",
-      "en"
-    ]
+    "languages": ["es", "en"],
+    "blueprint": "generator-jhipster-vuejs",
+    "blueprintVersion": "1.1.0"
+  },
+  "generator-jhipster-vuejs": {
+    "jhipsterVersion": "6.1.2",
+    "applicationType": "monolith",
+    "baseName": "WorkshopSilver",
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "vue",
+    "clientTheme": "none",
+    "clientThemeVariant": ""
   }
 }

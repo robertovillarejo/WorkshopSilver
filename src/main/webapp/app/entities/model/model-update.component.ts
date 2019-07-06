@@ -94,4 +94,16 @@ export default class ModelUpdate extends Vue {
         this.molds = res.data;
       });
   }
+
+  public openAddPhotoModal() {
+    this.$root.$emit('bv::show::modal', 'model-photo-add');
+  }
+
+  public addPhoto(photo: IPhoto) {
+    if (!this.model.photos) {
+      this.model.photos = new Array<IPhoto>();
+    }
+    this.model.photos.push(photo);
+    this.$root.$emit('bv::hide::modal', 'model-photo-add');
+  }
 }

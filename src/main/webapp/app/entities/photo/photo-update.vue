@@ -1,8 +1,7 @@
 <template>
     <div class="row justify-content-center">
         <div class="col-8">
-            <form name="editForm" role="form" novalidate v-on:submit.prevent="save()" >
-                <h2 id="workshopSilverApp.photo.home.createOrEditLabel" v-text="$t('workshopSilverApp.photo.home.createOrEditLabel')">Create or edit a Photo</h2>
+            <form name="editForm" role="form" novalidate>
                 <div>
                     <div class="form-group" v-if="photo.id">
                         <label for="id" v-text="$t('global.field.id')">ID</label>
@@ -41,19 +40,12 @@
                             </small>
                         </div>
                     </div>
-                    <div class="form-group">
-                        <label class="form-control-label" v-bind:value="$t('workshopSilverApp.photo.model')" for="photo-model">Model</label>
-                        <select class="form-control" id="photo-model" name="model" v-model="photo.model">
-                            <option v-bind:value="null"></option>
-                            <option v-bind:value="photo.model && modelOption.id === photo.model.id ? photo.model : modelOption" v-for="modelOption in models" :key="modelOption.id">{{modelOption.id}}</option>
-                        </select>
-                    </div>
                 </div>
                 <div>
-                    <button type="button" id="cancel-save" class="btn btn-secondary" v-on:click="previousState()">
+                    <button type="button" id="cancel-save" class="btn btn-secondary" @click="$root.$emit('bv::hide::modal', 'model-photo-add')">
                         <font-awesome-icon icon="ban"></font-awesome-icon>&nbsp;<span v-text="$t('entity.action.cancel')">Cancel</span>
                     </button>
-                    <button type="submit" id="save-entity" :disabled="$v.photo.$invalid || isSaving" class="btn btn-primary">
+                    <button type="button" id="save-entity" :disabled="$v.photo.$invalid || isSaving" class="btn btn-primary" v-on:click="$emit('added', photo)">
                         <font-awesome-icon icon="save"></font-awesome-icon>&nbsp;<span v-text="$t('entity.action.save')">Save</span>
                     </button>
                 </div>

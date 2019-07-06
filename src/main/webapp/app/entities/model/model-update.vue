@@ -22,8 +22,14 @@
                             </small>
                         </div>
                     </div>
+                    <div class="form-group">
+                        <button type="button" id="photo-add" class="btn btn-secondary" v-on:click="openAddPhotoModal()">
+                            <font-awesome-icon icon="plus"></font-awesome-icon><span>Add photo</span>
+                        </button>
+                    </div>
                 </div>
                 <div>
+                    
                     <button type="button" id="cancel-save" class="btn btn-secondary" v-on:click="previousState()">
                         <font-awesome-icon icon="ban"></font-awesome-icon>&nbsp;<span v-text="$t('entity.action.cancel')">Cancel</span>
                     </button>
@@ -33,6 +39,10 @@
                 </div>
             </form>
         </div>
+        <b-modal id="model-photo-add" hide-footer lazy>
+            <span slot="modal-title" id="add-photo-title" v-text="$t('workshopSilverApp.photo.home.createOrEditLabel')">Add photo</span>
+            <model-photo-add v-on:added="addPhoto($event)"></model-photo-add>
+        </b-modal>
     </div>
 </template>
 <script lang="ts" src="./model-update.component.ts">

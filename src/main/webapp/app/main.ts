@@ -26,6 +26,8 @@ import ConfigurationService from '@/admin/configuration/configuration.service';
 import ModelService from '@/entities/model/model.service';
 import MoldService from '@/entities/mold/mold.service';
 import PhotoService from '@/entities/photo/photo.service';
+import PhotoUpdate from '@/entities/photo/photo-update.vue';
+
 // jhipster-needle-add-entity-service-to-main-import - JHipster will import entities services here
 
 Vue.config.productionTip = false;
@@ -34,6 +36,7 @@ config.initFortAwesome(Vue);
 bootstrapVueConfig.initBootstrapVue(Vue);
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 Vue.component('jhi-item-count', JhiItemCountComponent);
+Vue.component('model-photo-add', PhotoUpdate);
 
 const i18n = config.initI18N(Vue);
 const store = config.initVueXStore(Vue);

@@ -22,15 +22,10 @@
                             </small>
                         </div>
                     </div>
-                    <div class="form-group">
-                        <button type="button" id="photo-add" class="btn btn-secondary" v-on:click="openAddPhotoModal()">
-                            <font-awesome-icon icon="plus"></font-awesome-icon>&nbsp;<span v-text="$t('entity.action.addimage')">Add image</span>
-                        </button>
-                    </div>
-                    <div>
-                        <gallery :index="index" @close="index = null" :images="gallery()"/>
-                        <img v-if="photos.length > 0" @click="index = 0" v-bind:src="'data:' + photos[0].photoContentType + ';base64,' + photos[0].photo" style="max-height: 100px;" alt="photo image"/>                      
-                    </div>                    
+                    <div class="container">
+                        <a v-on:click="openAddPhotoModal()"><font-awesome-icon icon="plus"></font-awesome-icon></a>
+                            <img v-for="(photo, index) in photos" v-bind:key="index" v-bind:src="'data:' + photo.photoContentType + ';base64,' + photo.photo" style="max-height: 100px;" alt="photo image"/>
+                    </div>                
                 </div>
                 <div>                    
                     <button type="button" id="cancel-save" class="btn btn-secondary" v-on:click="previousState()">
@@ -48,5 +43,6 @@
         </b-modal>
     </div>
 </template>
+
 <script lang="ts" src="./model-update.component.ts">
 </script>

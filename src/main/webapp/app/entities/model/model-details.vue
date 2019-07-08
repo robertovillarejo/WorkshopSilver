@@ -11,6 +11,10 @@
                         <span>{{model.name}}</span>
                     </dd>
                 </dl>
+                <gallery :index="index" @close="index = null" :images="gallery()"/>
+                <div class="container">
+                    <img v-for="(photo, photoIndex) in photos" v-bind:key="photoIndex" @click="index = photoIndex" v-bind:src="'data:' + photo.photoContentType + ';base64,' + photo.photo" style="max-height: 100px;" alt="photo image">
+                </div> 
                 <button type="submit"
                         v-on:click.prevent="previousState()"
                         class="btn btn-info">

@@ -24,12 +24,20 @@
                     </div>
                     <div class="form-group">
                         <button type="button" id="photo-add" class="btn btn-secondary" v-on:click="openAddPhotoModal()">
-                            <font-awesome-icon icon="plus"></font-awesome-icon><span>Add photo</span>
+                            <font-awesome-icon icon="plus"></font-awesome-icon>&nbsp;<span>Add photo</span>
                         </button>
                     </div>
+                    <div>
+                        <ul id="model-photos">
+                            <div v-for="photo in photos" v-bind:key="photo.id">
+                                <a v-on:click="openFile(photo.photoContentType, photo.photo)">
+                                    <img v-bind:src="'data:' + photo.photoContentType + ';base64,' + photo.photo" style="max-height: 100px;" alt="photo image"/>
+                                </a>
+                            </div>
+                        </ul>
+                    </div>                    
                 </div>
-                <div>
-                    
+                <div>                    
                     <button type="button" id="cancel-save" class="btn btn-secondary" v-on:click="previousState()">
                         <font-awesome-icon icon="ban"></font-awesome-icon>&nbsp;<span v-text="$t('entity.action.cancel')">Cancel</span>
                     </button>

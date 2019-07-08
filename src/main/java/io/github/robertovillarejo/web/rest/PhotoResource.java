@@ -115,4 +115,15 @@ public class PhotoResource {
         photoRepository.deleteById(id);
         return ResponseEntity.noContent().headers(HeaderUtil.createEntityDeletionAlert(applicationName, true, ENTITY_NAME, id.toString())).build();
     }
+    
+    /**
+     * {@code GET  /models/:id/photos} : get all the photos of the specified model.
+     *
+     * @return the {@link ResponseEntity} with status {@code 200 (OK)} and the list of photos in body.
+     */
+    @GetMapping("/models/{id}/photos")
+    public List<Photo> getAllPhotosByModel(@PathVariable Long id) {
+        log.debug("REST request to get all Photos of Model : {}", id);
+        return photoRepository.findAllByModelId(id);
+    }
 }

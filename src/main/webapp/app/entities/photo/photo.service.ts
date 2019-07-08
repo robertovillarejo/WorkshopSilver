@@ -44,4 +44,12 @@ export default class PhotoService {
       });
     });
   }
+
+  public getAllByModel(idModel: number) {
+    return new Promise<any>(resolve => {
+      axios.get(`api/models/${idModel}/photos`).then(function(res) {
+        resolve(res);
+      });
+    });
+  }
 }

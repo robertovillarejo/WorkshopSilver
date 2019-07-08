@@ -1,4 +1,6 @@
 import { Component, Vue, Inject } from 'vue-property-decorator';
+import JhiDataUtils from '@/shared/data/data-utils.service';
+import { mixins } from 'vue-class-component';
 
 import { numeric, required, minLength, maxLength } from 'vuelidate/lib/validators';
 
@@ -24,7 +26,7 @@ const validations: any = {
 @Component({
   validations
 })
-export default class ModelUpdate extends Vue {
+export default class ModelUpdate extends mixins(JhiDataUtils) {
   @Inject('alertService') private alertService: () => AlertService;
   @Inject('modelService') private modelService: () => ModelService;
   public model: IModel = new Model();
@@ -43,7 +45,7 @@ export default class ModelUpdate extends Vue {
       if (to.params.modelId) {
         vm.retrieveModel(to.params.modelId);
       }
-      vm.initRelationships();
+      vm.initRelationships(to.params.modelId);
     });
   }
 
@@ -82,17 +84,14 @@ export default class ModelUpdate extends Vue {
     this.$router.go(-1);
   }
 
-  public initRelationships(): void {
-    this.photoService()
-      .retrieve()
-      .then(res => {
-        this.photos = res.data;
-      });
-    this.moldService()
-      .retrieve()
-      .then(res => {
-        this.molds = res.data;
-      });
+  public initRelationships(idModel: number): void {
+    if (idModel) {
+      this.photoService()
+        .getAllByModel(idModel)
+        .then(res => {
+          this.photos = res.data;
+        });
+    }
   }
 
   public openAddPhotoModal() {
@@ -100,10 +99,12 @@ export default class ModelUpdate extends Vue {
   }
 
   public addPhoto(photo: IPhoto) {
-    if (!this.model.photos) {
-      this.model.photos = new Array<IPhoto>();
-    }
-    this.model.photos.push(photo);
-    this.$root.$emit('bv::hide::modal', 'model-photo-add');
+    photo.model = this.model;
+    this.photoService()
+      .create(photo)
+      .then(res => {
+        this.photos.push(res);
+        this.$root.$emit('bv::hide::modal', 'model-photo-add');
+      });
   }
 }

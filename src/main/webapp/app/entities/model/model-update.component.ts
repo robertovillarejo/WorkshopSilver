@@ -40,6 +40,8 @@ export default class ModelUpdate extends mixins(JhiDataUtils) {
   public molds: IMold[] = [];
   public isSaving = false;
 
+  public index = null;
+
   beforeRouteEnter(to, from, next) {
     next(vm => {
       if (to.params.modelId) {
@@ -106,5 +108,11 @@ export default class ModelUpdate extends mixins(JhiDataUtils) {
         this.photos.push(res);
         this.$root.$emit('bv::hide::modal', 'model-photo-add');
       });
+  }
+
+  public gallery() {
+    return this.photos.map(photo => {
+      return `${window.location.origin}/api/images/${photo.id}`;
+    });
   }
 }

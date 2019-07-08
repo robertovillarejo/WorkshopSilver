@@ -11,6 +11,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.mvc.method.annotation.StreamingResponseBody;
 
 import javax.validation.Valid;
 import java.net.URI;
@@ -125,5 +126,22 @@ public class PhotoResource {
     public List<Photo> getAllPhotosByModel(@PathVariable Long id) {
         log.debug("REST request to get all Photos of Model : {}", id);
         return photoRepository.findAllByModelId(id);
+    }
+    
+    /**
+     * {@code GET  /images/:id} : get the photo as image.
+     *
+     * @param id the id of the photo to retrieve.
+     * @return the {@link ResponseEntity} with status {@code 200 (OK)} and with body the photo, or with status {@code 404 (Not Found)}.
+     */
+    @GetMapping(path = "/images/{id}", produces = "image/jpeg")
+    public ResponseEntity<StreamingResponseBody> getPhotoAsImage(@PathVariable Long id) {
+        log.debug("REST request to get Photo as Image: {}", id);
+        Optional<Photo> photo = photoRepository.findById(id);
+        return ResponseEntity.ok().body((os) -> {
+            if (photo.isPresent()) {
+                os.write(photo.get().getPhoto());
+            }
+        });
     }
 }

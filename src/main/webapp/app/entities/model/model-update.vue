@@ -24,17 +24,12 @@
                     </div>
                     <div class="form-group">
                         <button type="button" id="photo-add" class="btn btn-secondary" v-on:click="openAddPhotoModal()">
-                            <font-awesome-icon icon="plus"></font-awesome-icon>&nbsp;<span>Add photo</span>
+                            <font-awesome-icon icon="plus"></font-awesome-icon>&nbsp;<span v-text="$t('entity.action.addimage')">Add image</span>
                         </button>
                     </div>
                     <div>
-                        <ul id="model-photos">
-                            <div v-for="photo in photos" v-bind:key="photo.id">
-                                <a v-on:click="openFile(photo.photoContentType, photo.photo)">
-                                    <img v-bind:src="'data:' + photo.photoContentType + ';base64,' + photo.photo" style="max-height: 100px;" alt="photo image"/>
-                                </a>
-                            </div>
-                        </ul>
+                        <gallery :index="index" @close="index = null" :images="gallery()"/>
+                        <img v-if="photos.length > 0" @click="index = 0" v-bind:src="'data:' + photos[0].photoContentType + ';base64,' + photos[0].photo" style="max-height: 100px;" alt="photo image"/>                      
                     </div>                    
                 </div>
                 <div>                    

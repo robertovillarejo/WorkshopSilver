@@ -14,6 +14,7 @@ import LogsService from './admin/logs/logs.service';
 import ActivateService from './account/activate/activate.service';
 import RegisterService from './account/register/register.service';
 import UserManagementService from '@/admin/user-management/user-management.service';
+import VueGallery from 'vue-gallery';
 
 import LoginService from './account/login.service';
 import AccountService from './account/account.service';
@@ -36,6 +37,7 @@ config.initFortAwesome(Vue);
 bootstrapVueConfig.initBootstrapVue(Vue);
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 Vue.component('jhi-item-count', JhiItemCountComponent);
+Vue.component('gallery', VueGallery);
 Vue.component('model-photo-add', PhotoUpdate);
 
 const i18n = config.initI18N(Vue);

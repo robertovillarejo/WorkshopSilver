@@ -15,6 +15,27 @@
                     <img v-for="(photo, photoIndex) in photos" v-bind:key="photoIndex" @click="index = photoIndex" v-bind:src="'data:' + photo.photoContentType + ';base64,' + photo.photo" style="max-height: 100px;" alt="photo image">
                 </div>
                 <gallery :index="index" @close="index = null" :images="gallery()"/>
+
+                <h3 class="jh-entity-heading"><span v-text="$t('workshopSilverApp.mold.home.title')">Molds</span></h3>
+                <div class="table-responsive" v-if="molds && molds.length > 0">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th><span v-text="$t('workshopSilverApp.mold.number')">Number</span></th>
+                                <th><span v-text="$t('workshopSilverApp.mold.size')">Size</span></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr v-for="mold of molds" :key="mold.id">
+                                <td>
+                                    <router-link :to="{name: 'MoldView', params: {moldId: mold.id}}">{{mold.number}}</router-link>
+                                </td>
+                                <td v-text="$t('workshopSilverApp.SizeModel.' + mold.size)">{{mold.size}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
                 <button type="submit"
                         v-on:click.prevent="previousState()"
                         class="btn btn-info">

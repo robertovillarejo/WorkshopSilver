@@ -22,10 +22,10 @@
                             </small>
                         </div>
                     </div>
-                    <div class="container">
+                    <div>
                         <a v-on:click="openAddPhotoModal()"><font-awesome-icon icon="plus"></font-awesome-icon></a>
                         <div v-for="(photo, index) in photos" v-bind:key="index" class="form-text text-danger clearfix">
-                            <img  
+                            <img
                             v-bind:src="'data:' + photo.photoContentType + ';base64,' + photo.photo" 
                             style="max-height: 100px;" 
                             alt="photo image"/>
@@ -45,10 +45,12 @@
                 </div>
             </form>
         </div>
+
         <b-modal id="model-photo-add" hide-footer lazy>
             <span slot="modal-title" id="add-photo-title" v-text="$t('workshopSilverApp.photo.home.createOrEditLabel')">Add photo</span>
             <model-photo-add v-on:added="addPhoto($event)"></model-photo-add>
         </b-modal>
+        
         <b-modal ref="removePhoto" id="removePhoto" >
             <span slot="modal-title"><span id="workshopSilverApp.photo.delete.question" v-text="$t('entity.delete.title')">Confirm delete operation</span></span>
             <div class="modal-body">

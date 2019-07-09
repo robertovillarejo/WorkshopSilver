@@ -1,14 +1,16 @@
 package io.github.robertovillarejo.repository;
 
-import io.github.robertovillarejo.domain.Mold;
+import java.util.List;
+import java.util.Optional;
+
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import org.springframework.data.jpa.repository.*;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
-import java.util.List;
-import java.util.Optional;
+import io.github.robertovillarejo.domain.Mold;
 
 /**
  * Spring Data  repository for the Mold entity.
@@ -25,5 +27,8 @@ public interface MoldRepository extends JpaRepository<Mold, Long> {
 
     @Query("select mold from Mold mold left join fetch mold.models where mold.id =:id")
     Optional<Mold> findOneWithEagerRelationships(@Param("id") Long id);
+    
+    @Query("select mold from Mold mold join mold.models model where model.id = :modelId")
+    List<Mold> findAllByModelId(@Param("modelId") Long modelId);
 
 }

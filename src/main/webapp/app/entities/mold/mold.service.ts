@@ -46,4 +46,12 @@ export default class MoldService {
       });
     });
   }
+
+  public findAllByModel(modelId: number): Promise<any> {
+    return new Promise<any>(resolve => {
+      axios.get(`api/models/${modelId}/molds`).then(function(res) {
+        resolve(res);
+      });
+    });
+  }
 }

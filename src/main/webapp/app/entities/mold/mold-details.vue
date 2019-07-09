@@ -21,7 +21,7 @@
                     </dt>
                     <dd>
                         <span v-for="(models, i) in mold.models" :key="models.id">{{i > 0 ? ', ' : ''}}
-                            <router-link :to="{name: 'ModelView', params: {modelsId: models.id}}">{{models.name}}</router-link>
+                            <router-link :to="{name: 'ModelView', params: {modelId: models.id}}">{{models.name}}</router-link>
                         </span>
                     </dd>
                 </dl>

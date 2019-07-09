@@ -5,6 +5,8 @@ import { IPhoto } from '@/shared/model/photo.model';
 
 import PhotoService from '../photo/photo.service';
 import ModelService from './model.service';
+import { IMold } from '@/shared/model/mold.model';
+import MoldService from '../mold/mold.service';
 
 @Component
 export default class ModelDetails extends Vue {
@@ -16,6 +18,10 @@ export default class ModelDetails extends Vue {
   @Inject('photoService') private photoService: () => PhotoService;
 
   public photos: IPhoto[] = [];
+
+  @Inject('moldService') private moldService: () => MoldService;
+
+  public molds: IMold[] = [];
 
   beforeRouteEnter(to, from, next) {
     next(vm => {
@@ -40,6 +46,12 @@ export default class ModelDetails extends Vue {
         .getAllByModel(idModel)
         .then(res => {
           this.photos = res.data;
+        });
+
+      this.moldService()
+        .findAllByModel(idModel)
+        .then(res => {
+          this.molds = res.data;
         });
     }
   }

@@ -40,6 +40,8 @@ export default class ModelUpdate extends mixins(JhiDataUtils) {
   public molds: IMold[] = [];
   public isSaving = false;
 
+  private removeId: number = null;
+
   beforeRouteEnter(to, from, next) {
     next(vm => {
       if (to.params.modelId) {
@@ -106,5 +108,26 @@ export default class ModelUpdate extends mixins(JhiDataUtils) {
         this.photos.push(res);
         this.$root.$emit('bv::hide::modal', 'model-photo-add');
       });
+  }
+
+  public prepareRemove(instance: IPhoto): void {
+    this.removeId = instance.id;
+  }
+
+  public removePhoto(): void {
+    this.photoService()
+      .delete(this.removeId)
+      .then(() => {
+        const message = this.$t('workshopSilverApp.photo.deleted', { param: this.removeId });
+        this.alertService().showAlert(message, 'danger');
+
+        this.removeId = null;
+        this.initRelationships(this.model.id);
+        this.closeDialog();
+      });
+  }
+
+  public closeDialog(): void {
+    (<any>this.$refs.removePhoto).hide();
   }
 }

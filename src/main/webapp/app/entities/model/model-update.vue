@@ -24,7 +24,15 @@
                     </div>
                     <div class="container">
                         <a v-on:click="openAddPhotoModal()"><font-awesome-icon icon="plus"></font-awesome-icon></a>
-                            <img v-for="(photo, index) in photos" v-bind:key="index" v-bind:src="'data:' + photo.photoContentType + ';base64,' + photo.photo" style="max-height: 100px;" alt="photo image"/>
+                        <div v-for="(photo, index) in photos" v-bind:key="index" class="form-text text-danger clearfix">
+                            <img  
+                            v-bind:src="'data:' + photo.photoContentType + ';base64,' + photo.photo" 
+                            style="max-height: 100px;" 
+                            alt="photo image"/>
+                            <b-button type="button" v-on:click="prepareRemove(photo)" v-b-modal.removePhoto class="btn btn-secondary btn-xs pull-right">
+                                <font-awesome-icon icon="times"></font-awesome-icon>
+                            </b-button>
+                        </div>                        
                     </div>                
                 </div>
                 <div>                    
@@ -40,6 +48,16 @@
         <b-modal id="model-photo-add" hide-footer lazy>
             <span slot="modal-title" id="add-photo-title" v-text="$t('workshopSilverApp.photo.home.createOrEditLabel')">Add photo</span>
             <model-photo-add v-on:added="addPhoto($event)"></model-photo-add>
+        </b-modal>
+        <b-modal ref="removePhoto" id="removePhoto" >
+            <span slot="modal-title"><span id="workshopSilverApp.photo.delete.question" v-text="$t('entity.delete.title')">Confirm delete operation</span></span>
+            <div class="modal-body">
+                <p id="jhi-delete-photo-heading" v-bind:title="$t('workshopSilverApp.photo.delete.question')">Are you sure you want to delete this Photo?</p>
+            </div>
+            <div slot="modal-footer">
+                <button type="button" class="btn btn-secondary" v-text="$t('entity.action.cancel')" v-on:click="closeDialog()">Cancel</button>
+                <button type="button" class="btn btn-primary" id="jhi-confirm-delete-photo" v-text="$t('entity.action.delete')" v-on:click="removePhoto()">Delete</button>
+            </div>
         </b-modal>
     </div>
 </template>

@@ -138,7 +138,7 @@ public class PhotoResource {
     public ResponseEntity<StreamingResponseBody> getPhotoAsImage(@PathVariable Long id) {
         log.debug("REST request to get Photo as Image: {}", id);
         Optional<Photo> photo = photoRepository.findById(id);
-        return ResponseEntity.ok().body((os) -> {
+        return ResponseEntity.ok().body(os -> {
             if (photo.isPresent()) {
                 os.write(photo.get().getPhoto());
             }

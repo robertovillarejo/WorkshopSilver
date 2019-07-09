@@ -38,7 +38,9 @@
     "nativeLanguage": "es",
     "languages": ["es", "en"],
     "blueprint": "generator-jhipster-vuejs",
-    "blueprintVersion": "1.1.0"
+    "blueprintVersion": "1.1.0",
+    "herokuAppName": "workshop-silver",
+    "herokuDeployType": "git"
   },
   "generator-jhipster-vuejs": {
     "jhipsterVersion": "6.1.2",

@@ -7,9 +7,9 @@
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "entities": {
         "main": "Entidades",
-        "model": "Model",
-        "mold": "Mold",
-        "photo": "Photo",
+        "model": "Modelo",
+        "mold": "Molde",
+        "photo": "Foto",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {
@@ -87,7 +87,7 @@
       "id": "ID"
     },
     "ribbon": {
-      "dev": "Development"
+      "dev": "Desarrollo"
     },
     "item-count": "Monstrando {{first}} - {{second}} de {{total}} elementos."
   },

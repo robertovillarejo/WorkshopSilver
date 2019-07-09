@@ -2,23 +2,23 @@
   "workshopSilverApp": {
     "mold": {
       "home": {
-        "title": "Molds",
-        "createLabel": "Crear nuevo Mold",
-        "createOrEditLabel": "Crear o editar Mold",
-        "notFound": "No Mold found"
+        "title": "Moldes",
+        "createLabel": "Crear nuevo Molde",
+        "createOrEditLabel": "Crear o editar Molde",
+        "notFound": "No se encontró ningún Molde"
       },
-      "created": "Un nuevo Mold ha sido creado con el identificador {{ param }}",
-      "updated": "Un Mold ha sido actualizado con el identificador {{ param }}",
-      "deleted": "Un Mold ha sido eliminado con el identificador {{ param }}",
+      "created": "Un nuevo Molde ha sido creado con el identificador {{ param }}",
+      "updated": "Un Molde ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Molde ha sido eliminado con el identificador {{ param }}",
       "delete": {
-        "question": "¿Seguro que quiere eliminar Mold {{ id }}?"
+        "question": "¿Seguro que quiere eliminar Molde {{ id }}?"
       },
       "detail": {
-        "title": "Mold"
+        "title": "Molde"
       },
-      "number": "Number",
-      "size": "Size",
-      "models": "Models"
+      "number": "Número",
+      "size": "Tamaño",
+      "models": "Modelos"
     }
   }
 }

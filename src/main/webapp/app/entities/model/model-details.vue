@@ -2,13 +2,13 @@
     <div class="row justify-content-center">
         <div class="col-8">
             <div v-if="model">
-                <h2 class="jh-entity-heading"><span v-text="$t('workshopSilverApp.model.detail.title')">Model</span> {{model.id}}</h2>
+                <h2 class="jh-entity-heading">{{model.name}}</h2>
                 <dl class="row jh-entity-details">
                     <dt>
-                        <span v-text="$t('workshopSilverApp.model.name')">Name</span>
+                        <span v-text="$t('workshopSilverApp.model.detail.title')">Model</span>
                     </dt>
                     <dd>
-                        <span>{{model.name}}</span>
+                        <span>{{model.id}}</span>
                     </dd>
                 </dl>
                 <div class="container">

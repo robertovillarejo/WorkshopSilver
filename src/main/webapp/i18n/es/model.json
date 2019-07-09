@@ -2,23 +2,23 @@
   "workshopSilverApp": {
     "model": {
       "home": {
-        "title": "Models",
-        "createLabel": "Crear nuevo Model",
-        "createOrEditLabel": "Crear o editar Model",
-        "notFound": "No Model found"
+        "title": "Modelos",
+        "createLabel": "Crear nuevo Modelo",
+        "createOrEditLabel": "Crear o editar Modelo",
+        "notFound": "No se encontró ningún Modelo"
       },
-      "created": "Un nuevo Model ha sido creado con el identificador {{ param }}",
-      "updated": "Un Model ha sido actualizado con el identificador {{ param }}",
-      "deleted": "Un Model ha sido eliminado con el identificador {{ param }}",
+      "created": "Un nuevo Modelo ha sido creado con el identificador {{ param }}",
+      "updated": "Un Modelo ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Modelo ha sido eliminado con el identificador {{ param }}",
       "delete": {
-        "question": "¿Seguro que quiere eliminar Model {{ id }}?"
+        "question": "¿Seguro que quiere eliminar Modelo {{ id }}?"
       },
       "detail": {
-        "title": "Model"
+        "title": "Modelo"
       },
-      "name": "Name",
-      "photos": "Photos",
-      "molds": "Molds"
+      "name": "Nombre",
+      "photos": "Fotos",
+      "molds": "Moldes"
     }
   }
 }

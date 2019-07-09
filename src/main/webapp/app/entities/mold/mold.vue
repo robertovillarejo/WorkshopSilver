@@ -24,7 +24,6 @@
             <table class="table table-striped">
                 <thead>
                 <tr>
-                    <th v-on:click="changeOrder('id')"><span v-text="$t('global.field.id')">ID</span> <font-awesome-icon icon="sort"></font-awesome-icon></th>
                     <th v-on:click="changeOrder('number')"><span v-text="$t('workshopSilverApp.mold.number')">Number</span> <font-awesome-icon icon="sort"></font-awesome-icon></th>
                     <th v-on:click="changeOrder('size')"><span v-text="$t('workshopSilverApp.mold.size')">Size</span> <font-awesome-icon icon="sort"></font-awesome-icon></th>
                     <th></th>
@@ -34,9 +33,8 @@
                 <tr v-for="mold of orderBy(molds, propOrder, reverse === true ? 1 : -1)"
                     :key="mold.id">
                     <td>
-                        <router-link :to="{name: 'MoldView', params: {moldId: mold.id}}">{{mold.id}}</router-link>
+                        <router-link :to="{name: 'MoldView', params: {moldId: mold.id}}">{{mold.number}}</router-link>
                     </td>
-                    <td>{{mold.number}}</td>
                     <td v-text="$t('workshopSilverApp.SizeModel.' + mold.size)">{{mold.size}}</td>
                     <td class="text-right">
                         <div class="btn-group flex-btn-group-container">

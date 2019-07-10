@@ -37,8 +37,8 @@ spring:
       indent-output: true
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:h2:file:./target/h2db/db/workshopsilver;DB_CLOSE_DELAY=-1
-    username: WorkshopSilver
+    url: jdbc:mysql://localhost:3306/WorkshopSilver?useUnicode=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC
+    username: root
     password:
     hikari:
       poolName: Hikari

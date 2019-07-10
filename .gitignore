@@ -128,6 +128,8 @@ Desktop.ini
 *.*~
 *~
 .merge_file*
+.attach_pid*
+.env
 
 ######################
 # Gradle Wrapper
@@ -143,8 +145,3 @@ Desktop.ini
 # ESLint
 ######################
 .eslintcache
-
-######################
-# PID
-######################
-.attach_pid*
